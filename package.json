@@ -1,0 +1,16 @@
+{
+  "name": "currency-converter-frontend",
+  "version": "1.0.0",
+  "description": "Frontend for currency converter application",
+  "scripts": {
+    "start": "npx http-server . -p 8080 -c-1",
+    "serve": "python -m http.server 8080"
+  },
+  "keywords": [
+    "currency",
+    "frontend",
+    "exchange-rates"
+  ],
+  "author": "",
+  "license": "ISC"
+}

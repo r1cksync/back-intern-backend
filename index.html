@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter - USD Exchange Rates</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>💱 Currency Converter</h1>
+            <p class="subtitle">Real-time USD Exchange Rates</p>
+        </header>
+
+        <div class="config-section">
+            <label for="api-url">API Base URL:</label>
+            <input type="text" id="api-url" value="http://localhost:3000/api" placeholder="http://localhost:3000/api">
+            <label for="currency-select">Currency:</label>
+            <select id="currency-select">
+                <option value="ARS">ARS (Argentina Peso)</option>
+                <option value="BRL">BRL (Brazilian Real)</option>
+            </select>
+            <button id="refresh-btn" class="btn-primary">🔄 Refresh Data</button>
+        </div>
+
+        <div class="status-bar">
+            <span id="status-text">Ready</span>
+            <span id="last-update"></span>
+        </div>
+
+        <!-- Quotes Section -->
+        <section class="card">
+            <h2>📊 Exchange Quotes</h2>
+            <div id="quotes-loading" class="loading">Loading quotes...</div>
+            <div id="quotes-error" class="error" style="display: none;"></div>
+            <div id="quotes-container"></div>
+        </section>
+
+        <!-- Average Section -->
+        <section class="card">
+            <h2>📈 Average Rates</h2>
+            <div id="average-loading" class="loading">Loading average...</div>
+            <div id="average-error" class="error" style="display: none;"></div>
+            <div id="average-container"></div>
+        </section>
+
+        <!-- Slippage Section -->
+        <section class="card">
+            <h2>📉 Slippage Analysis</h2>
+            <div id="slippage-loading" class="loading">Loading slippage...</div>
+            <div id="slippage-error" class="error" style="display: none;"></div>
+            <div id="slippage-container"></div>
+        </section>
+
+        <footer>
+            <p>Data updates every 60 seconds | Built with Node.js & PostgreSQL</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
