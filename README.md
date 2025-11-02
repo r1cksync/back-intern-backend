@@ -2,6 +2,12 @@
 
 This is the frontend dashboard for the Currency Converter application.
 
+backend github:
+
+backend deployed link:https://back-intern-frontend.vercel.app/
+
+frontend deployed link:https://back-intern-backend.vercel.app/
+
 ## Quick Start
 
 ### Option 1: Open Directly
