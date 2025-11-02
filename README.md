@@ -2,7 +2,7 @@
 
 This is the frontend dashboard for the Currency Converter application.
 
-backend github:
+backend github:https://github.com/r1cksync/back-intern-frontend
 
 backend deployed link:https://back-intern-frontend.vercel.app/
 
